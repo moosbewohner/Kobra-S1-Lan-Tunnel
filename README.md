@@ -130,6 +130,27 @@ systemctl disable mcu2
 ```
 
 ---
+## 🌐 Configuring `printer.cfg` for LAN Tunnel Connection
+
+To enable communication with your printer over the LAN tunnel, you need to update your `printer.cfg` to use the virtual serial devices created by the `socat` services.
+
+---
+
+## 🛠️ Configuration
+
+Replace your existing MCU configuration with the following:
+
+```ini
+[mcu]
+serial: /dev/ttyMCU1
+restart_method: command
+baud: 576000
+
+[mcu nozzle_mcu]
+serial: /dev/ttyMCU2
+restart_method: command
+baud: 576000
+```
 
 ## 🔍 Logs
 
