@@ -21,7 +21,7 @@ start() {
                 ifconfig eth1 down
                 #ifconfig eth1 hw ether 00:E0:4C:44:4E:50 #<<<<< Here please your MAC Adress from your Printer
                 ifconfig eth1 up
-                #ifconfig eth1 192.168.10.67 netmask 255.255.255.0 up
+                
 
                 log "Started Watchdog $EXAMPLE_VERSION from $APP_ROOT"
                 sleep 3
