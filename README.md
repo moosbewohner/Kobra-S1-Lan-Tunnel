@@ -1,3 +1,12 @@
+## 🙏 Acknowledgements
+
+Special thanks go to **Jbatonnet** — without him, the core project *Rinkhals* would not exist. Without this foundation, accessing the printer would not be possible.
+
+Another huge thank you goes to **Antiriad**, a *Vanilla Klipper* expert. Much of the work in bringing Vanilla Klipper to Anycubic printers would not exist without him. I am also very grateful for all the help and support he has provided along the way.
+
+
+
+
 ⚠️ **Attention:** Development is still in progress. The setup and installation instructions are not yet complete and may change.
 
 important and necessary Github projects!!!
