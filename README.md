@@ -29,7 +29,7 @@ This project provides a simple installer to create two `systemd` services that b
 
 ---
 
-## 🚀 Installation (Recommended)
+## 🚀 Installation Raspberry or other Klipper Device (Recommended)
 
 Download and run the installer with one command:
 
