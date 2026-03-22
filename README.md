@@ -1,3 +1,6 @@
+⚠️ **Attention:** Development is still in progress. The setup and installation instructions are not yet complete and may change.
+
+
 # Anycubic Kobra S1 – MCU Socat Bridge Services
 
 This project provides a simple installer to create two `systemd` services that bridge virtual serial devices to an Anycubic Kobra S1 over TCP using `socat`.
