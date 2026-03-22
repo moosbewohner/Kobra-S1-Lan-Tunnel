@@ -1,21 +1,30 @@
 ## 🙏 Acknowledgements
 
-Special thanks go to **Jbatonnet** — without him, the core project *Rinkhals* would not exist. Without this foundation, accessing the printer would not be possible.
+A special thank you goes to **Jbatonnet** — without him, the core project *Rinkhals* would not exist. This project provides the essential foundation that makes access to the printer possible.
 
-Another huge thank you goes to **Antiriad**, a *Vanilla Klipper* expert. Much of the work in bringing Vanilla Klipper to Anycubic printers would not exist without him. I am also very grateful for all the help and support he has provided along the way.
+Another big thank you goes to **Antiriad**, a *Vanilla Klipper* expert. Much of the progress in bringing Vanilla Klipper to Anycubic printers would not have been possible without his work. I am also personally very grateful for all the support, knowledge, and guidance he has shared.
 
+---
 
+## ⚠️ Project Status
 
+**Attention:** This project is still under active development.
+The setup and installation instructions are not yet complete and may change at any time.
 
-⚠️ **Attention:** Development is still in progress. The setup and installation instructions are not yet complete and may change.
+---
 
-important and necessary Github projects!!!
+## 🔗 Important Resources
 
-https://github.com/Kobra-S1
+* https://github.com/Kobra-S1
+* https://github.com/jbatonnet/Rinkhals
 
-https://github.com/jbatonnet/Rinkhals.git
+---
 
-Discord: https://discord.gg/3mrANjpNJC
+## 💬 Community
+
+Join the Discord community for support and discussion:
+https://discord.gg/3mrANjpNJC
+
 # Anycubic Kobra S1 – MCU Socat Bridge Services
 
 This project provides a simple installer to create two `systemd` services that bridge virtual serial devices to an Anycubic Kobra S1 over TCP using `socat`.
