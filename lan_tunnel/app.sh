@@ -55,8 +55,8 @@ start() {
 
                 log "Socat start"
                 sleep 2
-                socat -ly -d -d -T 10 TCP-LISTEN:7003,reuseaddr,fork,nodelay,keepalive FILE:/dev/ttyS3,raw,echo=0,clocal,crtscts=0 &
-                socat -ly -d -d -T 10 TCP-LISTEN:7005,reuseaddr,fork,nodelay,keepalive FILE:/dev/ttyS5,raw,echo=0,clocal,crtscts=0 &
+                nice -n -20 socat -ly -d -d -T 10 TCP-LISTEN:7003,reuseaddr,fork,max-children=1,nodelay,keepalive,keepidle=5,keepintvl=1,keepcnt=3 FILE:/dev/ttyS3,rawer,b576000,echo=0,clocal,crtscts=0 &
+                nice -n -20 socat -ly -d -d -T 10 TCP-LISTEN:7005,reuseaddr,fork,max-children=1,nodelay,keepalive,keepidle=5,keepintvl=1,keepcnt=3 FILE:/dev/ttyS5,rawer,b576000,echo=0,clocal,crtscts=0 &
                 cd "$APP_ROOT"
                 chmod +x ./pwm_jingle.sh
                 ./pwm_jingle.sh imperial
