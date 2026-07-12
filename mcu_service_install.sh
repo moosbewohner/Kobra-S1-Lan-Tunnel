@@ -52,8 +52,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/socat -d -d \\
-  PTY,link=/dev/ttyMCU1,raw,echo=0,mode=660,group=dialout,wait-slave \\
+ExecStart=/usr/bin/socat -d -d \
+  PTY,link=/dev/ttyMCU1,raw,echo=0,mode=660,group=dialout,wait-slave,pty-interval=0.1,sitout-eio=5 \
   TCP:${PRINTER_IP}:7003,nodelay,keepalive,forever,interval=1
 Restart=always
 RestartSec=1
@@ -75,8 +75,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/socat -d -d \\
-  PTY,link=/dev/ttyMCU2,raw,echo=0,mode=660,group=dialout,wait-slave \\
+ExecStart=/usr/bin/socat -d -d \
+  PTY,link=/dev/ttyMCU2,raw,echo=0,mode=660,group=dialout,wait-slave,pty-interval=0.1,sitout-eio=5 \
   TCP:${PRINTER_IP}:7005,nodelay,keepalive,forever,interval=1
 Restart=always
 RestartSec=1
