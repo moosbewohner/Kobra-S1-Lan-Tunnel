@@ -30,6 +30,20 @@ Selecting one option does not disable previously installed services from another
 - For LAN: printer-side TCP ports 7003 and 7005. Port 7007 is reserved for a future third MCU and requires a matching printer-side bridge before use.
 - Run while the printer is idle: the selected tunnel services are restarted during setup.
 
+## Prepare the printer first: install the matching SWU with Rinkhals
+
+Before setting up the Pi tunnels, **install the SWU file matching your printer model on the printer running Rinkhals**. The Pi installer does not perform this step. Use the Rinkhals SWU installation procedure for your device.
+
+| Printer model | Printer-side LAN tunnel package |
+| --- | --- |
+| Kobra S1 | [app-lan_tunnel-ks1.swu](app-lan_tunnel-ks1.swu) |
+| Kobra 2 Pro / Kobra 3 | [app-lan_tunnel-k2p-k3.swu](app-lan_tunnel-k2p-k3.swu) |
+| Kobra 3 Max | [app-lan_tunnel-k3m.swu](app-lan_tunnel-k3m.swu) |
+
+These packages provide the printer-side **LAN tunnel**. For USB, install the corresponding printer-side USB tunnel package from your USB setup project; selecting USB or All on the Pi does not install a printer-side SWU. Choose the package for your exact model and intended transport.
+
+After installing and enabling the corresponding printer-side tunnel, run the Pi installer below. MCU3/port 7007 in the Pi installer is reserved; these SWU packages are not thereby guaranteed to provide a third MCU bridge.
+
 ## Installation
 
 ```bash
