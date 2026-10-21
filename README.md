@@ -40,7 +40,7 @@ Before setting up the Pi tunnels, **install the SWU file matching your printer m
 | Kobra 2 Pro / Kobra 3 | [app-lan_tunnel-k2p-k3.swu](app-lan_tunnel-k2p-k3.swu) |
 | Kobra 3 Max | [app-lan_tunnel-k3m.swu](app-lan_tunnel-k3m.swu) |
 
-These packages provide the printer-side **LAN tunnel**. For USB, install the corresponding printer-side USB tunnel package from your USB setup project; selecting USB or All on the Pi does not install a printer-side SWU. Choose the package for your exact model and intended transport.
+These packages provide the printer-side **LAN tunnel**. For USB, install the corresponding printer-side USB tunnel package from the [USB tunnel project: vanilla-klipper-swu](https://github.com/Kobra-S1/vanilla-klipper-swu); selecting USB or All on the Pi does not install a printer-side SWU. Choose the package for your exact model and intended transport.
 
 After installing and enabling the corresponding printer-side tunnel, run the Pi installer below. MCU3/port 7007 in the Pi installer is reserved; these SWU packages are not thereby guaranteed to provide a third MCU bridge.
 
@@ -151,6 +151,7 @@ Disabling the service removes its systemd-managed MCU aliases. These commands le
 - [Kobra-S1 Klipper environment](https://github.com/Kobra-S1/klipper-kobra-s1)
 - [ACEPRO](https://github.com/Kobra-S1/ACEPRO)
 - [Rinkhals](https://github.com/rinkhals-community/Rinkhals)
+- [USB tunnel project and printer-side USB SWU packages](https://github.com/Kobra-S1/vanilla-klipper-swu)
 - [Original USB setup script](https://github.com/moosbewohner/vanilla-klipper-swu/blob/main/setup_tunnel_klipper.sh)
 - [Discord community](https://discord.gg/3mrANjpNJC)
 
